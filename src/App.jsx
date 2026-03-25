@@ -11,13 +11,6 @@ import Particles from './components/Particles'
 import { useIntersectionObserver } from './hooks/useIntersectionObserver'
 
 export default function App() {
-  useEffect(() => {
-    // Initialize Lucide icons
-    if (window.lucide) {
-      window.lucide.createIcons()
-    }
-  }, [])
-
   useIntersectionObserver()
 
   return (
